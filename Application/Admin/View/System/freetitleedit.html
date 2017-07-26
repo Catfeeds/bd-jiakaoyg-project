@@ -1,0 +1,65 @@
+<include file="Public/include/meta.html" />
+<title>编辑题目</title>
+</head>
+<body>
+<div class="page-container">
+	<form action="freetitleeditHandle" class="form form-horizontal" id="form-article-add" enctype="multipart/form-data"  method="post" >
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>题目标题：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="" id="" name="quecont" value="{$arr.quecont}">
+				<input type="hidden" name="id" value="{$arr.id}">
+			</div>
+		</div>
+		<div class="row cl" id="quetypeid">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>题目内容：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				A:<input type="text" class="input-text" id="" name="xza" value="{$arr.options.A}">
+				B:<input type="text" class="input-text" id="" name="xzb" value="{$arr.options.B}">
+				C:<input type="text" class="input-text" id="" name="xzc" value="{$arr.options.C}">
+				D:<input type="text" class="input-text" id="" name="xzd" value="{$arr.options.D}">
+			</div>
+			
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>题目答案：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="判断题A是正确B是错误" id="" name="answer"  value="{$arr.answer}">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">红字提示：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="" id="" name="red" value="{$arr.red}">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">解析：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="note" cols="" rows="" class="textarea">{$arr.note}</textarea>
+				<p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">排序：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" placeholder="" id="" name="orders" value="{$arr.orders}">
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button class="btn btn-primary radius" type="submit" form="form-article-add"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				<button onClick="sc_freetitle();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+<include file="Public/include/footer.html" />
+<script>
+function sc_freetitle(){
+	location.href="freetitle";
+}
+</script>
+</body>
+</html>

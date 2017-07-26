@@ -1,0 +1,18 @@
+[ 2017-05-15T21:41:44+08:00 ] 123.123.1.158 /index.php?m=search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块:Search
+
+[ 2017-05-15T21:41:44+08:00 ] 123.123.1.158 /index.php?m=link
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+ERR: 无法加载模块:Link
+
+[ 2017-05-15T21:41:45+08:00 ] 123.123.1.158 /index.php?m=wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载模块:Wap
+

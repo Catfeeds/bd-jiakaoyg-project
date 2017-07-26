@@ -1,0 +1,182 @@
+﻿<include file="Public/include/meta.html" />
+
+<title>驾考易过|后台管理|首页</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+<include file="Public/include/header.html" />
+<include file="Public/include/menu.html" />
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="__MODULE__/Index/index" class="maincolor">首页</a> 
+		<span class="c-999 en">&gt;</span>
+		<span class="c-666">我的桌面</span> 
+		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<p class="f-20 text-success">欢迎使用 驾考易过
+				<span class="f-14">v1.0</span>
+				后台管理</p>
+			<table class="table table-border table-bordered table-bg">
+				<thead>
+					<tr>
+						<th colspan="7" scope="col">信息统计</th>
+			</tr>
+					<tr class="text-c">
+						<th>小车题库</th>
+						<th>客车题库</th>
+						<th>货车题库</th>
+						<th>摩托车题库</th>
+			</tr>
+		</thead>
+				<tbody>
+					<tr class="text-c">
+						<td>{$s1}</td>
+						<td>{$s2}</td>
+						<td>{$s3}</td>
+						<td>{$s4}</td>
+			</tr>
+		</tbody>
+	</table>
+			<table class="table table-border table-bordered table-bg mt-20">
+				<thead>
+					<tr>
+						<th colspan="2" scope="col">服务器信息</th>
+			</tr>
+		</thead>
+				<tbody>
+					<tr>
+						<th width="30%">服务器计算机名</th>
+						<td><span id="lbServerName">
+							<php>
+								echo $_SERVER['SERVER_NAME'];
+							</php>
+						</span></td>
+			</tr>
+					<tr>
+						<td>服务器IP地址</td>
+						<td>
+							<php>
+								echo $_SERVER['SERVER_ADDR'];
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>服务器域名</td>
+						<td>
+							<php>
+								echo $_SERVER["HTTP_HOST"];
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>服务器端口 </td>
+						<td>
+							<php>
+								echo $_SERVER['SERVER_PORT'];
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>本文件所在文件夹 </td>
+						<td>
+							<php>
+								echo WEB_ROOT;
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>服务器操作系统 </td>
+						<td>
+							<php>
+								echo PHP_OS;
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>服务器脚本超时时间 </td>
+						<td>
+							<php>
+								echo ini_get("max_execution_time");
+							</php>
+						</td>
+			</tr>
+					<tr>d
+						<td>服务器当前时间 </td>
+						<td>
+							<php>
+								echo date('Y-m-d H:i:s',time());
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>逻辑驱动器 </td>
+						<td>C:\D:\</td>
+			</tr>
+					<tr>
+						<td>CPU 总数 </td>
+						<td>
+							<php>
+								echo $_SERVER['PROCESSOR_IDENTIFIER'];
+							</php>
+						</td>
+			</tr>
+					<tr>
+						<td>CPU 类型 </td>
+						<td>x86 Family 6 Model 42 Stepping 1, GenuineIntel</td>
+			</tr>
+					<tr>
+						<td>虚拟内存 </td>
+						<td>52480M</td>
+			</tr>
+					<tr>
+						<td>当前程序占用内存 </td>
+						<td>3.29M</td>
+			</tr>
+					<tr>
+						<td>Asp.net所占内存 </td>
+						<td>51.46M</td>
+			</tr>
+					<tr>
+						<td>当前Session数量 </td>
+						<td>8</td>
+			</tr>
+					<tr>
+						<td>当前SessionID </td>
+						<td>gznhpwmp34004345jz2q3l45</td>
+			</tr>
+					<tr>
+						<td>当前系统用户名 </td>
+						<td>NETWORK SERVICE</td>
+			</tr>
+		</tbody>
+	</table>
+</article>
+		<footer class="footer">
+			<p>本后台系统由<a href="" title="">王彩霖</a>提供技术支持</p>
+</footer>
+</div>
+</section>
+
+<include file="Public/include/footer.html" />
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+<!--此乃百度统计代码，请自行删除-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--/此乃百度统计代码，请自行删除-->
+</body>
+</html>

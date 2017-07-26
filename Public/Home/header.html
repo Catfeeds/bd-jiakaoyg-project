@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{:get_opinion('title','option_value')}</title>
+        <link href="__PUBLIC__/Home/css/index.css" rel="stylesheet">
+        <script src="__PUBLIC__/Home/js/jquery.js"></script>
+    </head>
+<body>
+
+
+        <div class="hBox fcc">
+            <span>
+                <a href="" title="">
+                    <img alt="" height="50" src="__PUBLIC__/Home/img/logo.png" width="168">
+                    </img>
+                </a>
+            </span>
+            <strong>
+                <a href="" title="2017驾驶员理论技巧在线模拟考试系统">
+                    2017驾驶员理论技巧在线模拟考试系统<br>
+                    诚征全国加盟学习热线:{:get_opinion('phone1','option_value')}
+                </a>
+            </strong>
+            <p>
+            <if condition="$Think.session.sc_name neq null">
+                  <a href="" class="user">{$Think.session.sc_name}</a>|
+                  <a href="__MODULE__/Index/logout">退出</a>
+            <else />
+                  <a href="__MODULE__/Index/sequential?test=test" target="_blank">免费题库</a>|
+                  <a href="__MODULE__/Index/login">请登录</a>
+            </if>
+            </p>
+        </div>
+        <div class="htmleaf-container">
+    <nav class="animenu">
+      <button class="animenu__toggle">
+        <span class="animenu__toggle__bar"></span>
+        <span class="animenu__toggle__bar"></span>
+        <span class="animenu__toggle__bar"></span>
+      </button>
+      <ul class="animenu__nav">
+        <li>
+          <a href="__MODULE__/Index/index">首页</a>
+        </li>
+        <li>
+          <a href="#">小车题库</a>
+          <ul class="animenu__nav__child">
+            <li><a href="__MODULE__/Index/index?questions=1">科目一</a></li>
+            <li><a href="__MODULE__/Index/indexFour?questions=1">科目四</a></li>
+          </ul>
+        </li>     
+        <li>
+          <a href="__MODULE__/Index/index1?questions=2">客车题库</a>
+        </li>
+        <li>
+          <a href="__MODULE__/Index/index2?questions=3">货车题库</a>
+        </li>
+        <li>
+          <a href="__MODULE__/Index/about">联系我们</a>
+        </li>
+        <li>
+          <a href="__MODULE__/Index/sequential?test=test" target="_black">免费试题</a>
+        </li>
+      </ul>
+    </nav>
+</div>

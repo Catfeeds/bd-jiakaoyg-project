@@ -1,0 +1,533 @@
+[ 2017-06-16T10:43:36+08:00 ] 221.192.179.77 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-06-16T10:43:57+08:00 ] 221.192.179.77 /index.php/Admin/All/logHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `sc_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sc_admin` WHERE `username` = 'admin' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-06-16T10:43:58+08:00 ] 221.192.179.77 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 2 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /phpstudy/www/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined index: PROCESSOR_IDENTIFIER /phpstudy/www/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-06-16T10:44:06+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-06-16T10:45:42+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `quecont` LIKE '%汽车列车急转弯时%' AND `questions` = 1 AND `class` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sc_questions` WHERE `quecont` LIKE '%汽车列车急转弯时%' AND `questions` = 1 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-06-16T10:46:01+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `quecont` LIKE '%位置%' AND `questions` = 1 AND `class` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sc_questions` WHERE `quecont` LIKE '%位置%' AND `questions` = 1 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-06-16T10:46:29+08:00 ] 221.192.179.77 /index.php/Admin/Car/classFour2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 23 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 23 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-06-16T10:46:53+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-06-16T10:47:25+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 10,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-06-16T10:47:34+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 20,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-06-16T10:47:43+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 30,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-06-16T10:47:59+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 40,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-06-16T10:48:10+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 50,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2017-06-16T10:48:17+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 60,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-06-16T10:48:20+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-06-16T10:48:24+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 10,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-06-16T10:48:28+08:00 ] 221.192.179.77 /index.php/Admin/Car/classOne3/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sc_questions` WHERE `questions` = 3 AND `class` = 1 ORDER BY orders desc LIMIT 30,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-06-16T10:48:33+08:00 ] 221.192.179.77 /index.php/Admin/Car/edit?id=2683
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 2683 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-06-16T10:49:04+08:00 ] 221.192.179.77 /index.php/Admin/Car/editHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2] Missing argument 1 for I(), called in /phpstudy/www/Application/Admin/Controller/CarController.class.php on line 70 and defined /phpstudy/www/ThinkPHP/Common/functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name /phpstudy/www/ThinkPHP/Common/functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name /phpstudy/www/ThinkPHP/Common/functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name /phpstudy/www/ThinkPHP/Common/functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: UPDATE `sc_questions` SET `quecont`='汽车列车急转弯时，无论向左或向右，都应降低车速，低速沿车道的____通过。',`id`='2683',`answer`='A',`red`='',`note`='答案是外侧，因为汽车列车都比较长，转弯占道也比较多，所以要沿道路外侧，并随时做好让车准备',`orders`='36',`options`='a:4:{s:1:\"A\";s:6:\"外侧\";s:1:\"B\";s:12:\"任意一侧\";s:1:\"C\";s:6:\"内侧\";s:1:\"D\";s:6:\"中间\";}' WHERE `id` = 2683 [ RunTime:0.0002s ]
+SQL: SELECT `class` FROM `sc_questions` WHERE `id` = 2683 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /phpstudy/www/ThinkPHP/Library/Think/Db/Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 /phpstudy/www/ThinkPHP/Library/Think/Db/Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 /phpstudy/www/ThinkPHP/Library/Think/Db/Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 /phpstudy/www/ThinkPHP/Library/Think/Db/Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 /phpstudy/www/ThinkPHP/Library/Think/Db/Driver.class.php 第 600 行.
+SQL: SELECT `class` FROM `sc_questions` WHERE ( `id` = null  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: url /phpstudy/www/Application/Common/Common/function.php 第 262 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-06-16T10:49:05+08:00 ] 221.192.179.77 /index.php/Admin/Car/edit?id=2683
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 2683 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+

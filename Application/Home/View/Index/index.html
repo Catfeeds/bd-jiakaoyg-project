@@ -1,0 +1,105 @@
+<include file="Public/Home/header.html"/>
+        <div class="mainBox fcc">
+            <div class="adtop">
+                <h2>科目一</h2>
+            </div>
+            <div class="section_box">
+                <div class="classifybox">
+                    <ul class="classify" id="classify">
+                        <li>
+                            <p class="classifyp">
+                                基础练习
+                            </p>
+                            <p>
+                                <span class="" name="101">
+                                    标线及手势
+                                </span>
+                                <span class="" name="102">
+                                    禁令标志
+                                </span>
+                                <span class="" name="103">
+                                    警告标志
+                                </span>
+                                <span class="" name="104">
+                                    指示标志
+                                </span>
+                                <span class="" name="105">
+                                    指路标志
+                                </span>
+                                <span class="" name="106">
+                                    机械常识
+                                </span>
+                                <span class="" name="107">
+                                    基础补充
+                                </span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="classifyp">
+                                强化练习
+                            </p>
+                            <p>
+                                <span class="" name="201">
+                                    速成练习一
+                                </span>
+                                <span class="" name="202">
+                                    速成练习二
+                                </span>
+                                <span class="" name="203">
+                                    速成练习三
+                                </span>
+                                <span class="" name="204">
+                                    速成练习四
+                                </span>
+                                <span class="" name="205">
+                                    速成练习五
+                                </span>
+                                <span class="" name="206">
+                                    速成练习六
+                                </span>
+                                <span class="" name="207">
+                                    速成练习七
+                                </span>
+                                <span class="" name="208">
+                                    速成练习八
+                                </span>
+                                <span class="" name="209">
+                                    速成练习九
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="ExamBtn">
+                        <u class="btnJJ" name="">
+                            顺序练习
+                        </u>
+                        <u class="btnCJ" name="">
+                            随机练习
+                        </u>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+    var str1 = "";
+    var str2 = "";
+    var getUrl = window.location.href;
+    getUrl = getUrl.split("?");
+    if(getUrl[1]){
+        getUrl = getUrl[1];
+        getUrl = getUrl.split("=");
+        str1 += "__MODULE__/Index/sequential?questions=";
+        str1 += getUrl[1];
+        str2 += str1;
+        str1 += "&class=1&sort=1";
+        str2 += "&class=1&sort=0";
+    }else{
+        str1 += "__MODULE__/Index/sequential?questions=1&class=1&sort=1";
+        str2 += "__MODULE__/Index/sequential?questions=1&class=1&sort=0";
+    }
+    $('.btnJJ').attr('name',str1);
+    $('.btnCJ').attr('name',str2);
+
+    
+</script>
+<include file="Public/Home/footer.html"/>

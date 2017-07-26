@@ -1,0 +1,182 @@
+[ 2017-05-28T11:42:58+08:00 ] 221.192.179.105 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-05-28T11:43:15+08:00 ] 221.192.179.105 /index.php/Admin/All/logHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `sc_admin` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sc_admin` WHERE `username` = 'admin' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-05-28T11:43:16+08:00 ] 221.192.179.105 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_questions` WHERE `questions` = 4 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /phpstudy/www/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 155 行.
+NOTIC: [8] Undefined index: PROCESSOR_IDENTIFIER /phpstudy/www/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-05-28T11:43:24+08:00 ] 221.192.179.105 /index.php/Admin/Member/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `sc_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sc_user`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_user` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `sc_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'description' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sc_options` WHERE `option_name` = 'title' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Use of undefined constant beentime - assumed 'beentime' /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 113 行.
+NOTIC: [8] Undefined variable: page /phpstudy/www/Application/Runtime/Cache/Admin/abb8a9f4c100b6f22c5fe7889f53ef71.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-05-28T11:43:48+08:00 ] 106.120.160.109 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-05-28T11:43:59+08:00 ] 101.199.108.51 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-05-28T11:44:07+08:00 ] 221.192.179.105 /index.php/Admin/All/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2017-05-28T11:44:09+08:00 ] 221.192.179.105 /index.php/Admin/Member/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+

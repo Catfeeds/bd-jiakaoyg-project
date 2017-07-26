@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 你自己的样式 */
+
+.prev,.next{
+	border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    margin: 0 0 6px 6px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.prev:hover,.next:hover,.num:hover{
+	background: #5a98de;
+	color: #fff;
+}
+
+.num{
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 2px;
+	height: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.current{
+	background: #5a98de;
+    color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.pages{
+	padding-top: 20px;
+}
+
+.pages >div{
+	float: right;
+}

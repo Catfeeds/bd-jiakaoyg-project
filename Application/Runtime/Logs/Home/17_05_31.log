@@ -1,0 +1,40 @@
+[ 2017-05-31T23:30:02+08:00 ] 101.226.125.15 /index.php/Home/Index/getQuestionById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 103 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-31T23:31:04+08:00 ] 101.226.125.15 /index.php/Home/Index/getQuestionById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 74 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-31T23:31:26+08:00 ] 101.226.125.15 /index.php/Home/Index/getQuestionById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 77 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-05-31T23:31:52+08:00 ] 101.226.125.15 /index.php/Home/Index/getQuestionById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `sc_questions` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sc_questions` WHERE `id` = 139 LIMIT 1   [ RunTime:0.0002s ]
+
